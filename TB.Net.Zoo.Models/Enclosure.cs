@@ -34,5 +34,9 @@ namespace TB.Net.Zoo.Models
             this.Lenght = lenght;
         }
 
+        public static double operator +(double left, Enclosure right)
+        {
+            return left + right.Area;
+        }
     }
 }
